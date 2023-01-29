@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body, #app, #app > div {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  
+}
+/* make the scrollbar very small, so we cant watch it but still do its job */
+::-webkit-scrollbar { 
+  width: 10px;
+}
+.containerGoals{
+  padding: 25px;
+  width: 30%;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+  height:100vh;
+  overflow-y: scroll;
+}
+.goal{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 220px;
+  height: max-content;
+  border-radius: 6px;
+  background-color: rgb(177, 177, 177);
+  word-wrap: break-word;
+  word-spacing: pre;
+
+}
+.inputg{
+  margin-top: 20px;
+  padding:  15px;
+  width: 220px;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.inputg:focus{
+
+  outline: none;
+}
+
+.Deletebtn,.markBtn{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  text-align: left;
+}
+.goalDisplay{
+  text-align: left;
+  font-size: 30px;
+  font-weight: 200;
+
+}
+
+.addBtn{
+  background-color: rgb(135, 199, 135);
+  padding: 15px;
+  margin-top: 10px;
+  height: 40px;
+  width: 70px;
+  border-radius: 6px;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
